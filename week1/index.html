@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Understanding HTML Links & CSS</title>
+    <link rel="stylesheet" href="/week1/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a> | <a href="#">About Us</a> |
+        <a href="#">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Understanding HTML Links</h1>
+      <div class="intro-box">
+        <p style="margin: 0">
+          Hyperlinks are the backbone of the web. They allow users to navigate
+          between pages seamlessly. Below, we explore the two main types of
+          links:
+          <strong>Absolute</strong> and <strong>Relative</strong>.
+        </p>
+      </div>
+
+      <h2>1. Absolute Linking</h2>
+
+      <div class="blue-callout">
+        <p style="margin: 0">
+          Absolute links point to a specific, full URL on the internet. They
+          must include the protocol (like https://) and the domain name. These
+          are typically used to link to external websites.
+        </p>
+      </div>
+
+      <div class="blue-callout">
+        <p style="margin: 0">
+          <strong>Example:</strong> Learn more about web development by visiting
+          the
+          <a href="https://en.wikipedia.org/wiki/HTTP" target="_blank"
+            >Wikipedia page for HTTP</a
+          >.
+        </p>
+      </div>
+
+      <h2>2. Relative Linking</h2>
+
+      <div class="yellow-callout">
+        <p style="margin: 0">
+          Relative links point to a file relative to the current file's location
+          on the same server. They do not include the protocol or domain name.
+          These are ideal for linking pages within your own website because if
+          you change your domain name, the links won't break.
+        </p>
+      </div>
+
+      <div class="examples-list">
+        <strong>Examples:</strong>
+        <ul>
+          <li>Read our <a href="#">About Us</a> page to meet the team.</li>
+          <li>
+            Check out our <a href="#">Privacy Policy</a> to see how we handle
+            data.
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>

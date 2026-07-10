@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: pink;
+        font-family: arial, sans-serif;
+      }
+      .highlight-text {
+        color: rgb(143, 205, 143);
+        font-weight: bold;
+      }
+      #footer-con {
+        background-color: bisque;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="">Home </a>|<a href="about.html"> About Us </a>|
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <h1>Understanding HTML Links</h1>
+
+    <p class="highlight-text">
+      Hyperlinks are the backbone of the web. They allow users to navigate
+      between pages seamlessly. Below, we explore the two main types of links:
+      Absolute and Relative.
+    </p>
+    <h3>1. Absolute Linking</h3>
+    <p>
+      Absolute links point to a specific, full URL on the internet. They must
+      include the protocol (like https://) and the domain name. These are
+      typically used to link to external websites. Example: Learn more about web
+      development by visiting the <a href="">Wikipedia page for HTTP</a>.
+    </p>
+    <h3>2. Relative Linking</h3>
+    <p>
+      Relative links point to a file relative to the current file's location on
+      the same server. They do not include the protocol or domain name. These
+      are ideal for linking pages within your own website because if you change
+      your domain name, the links won't break.
+    </p>
+    <b> Examples: </b>
+    <ul>
+      <li>Read our <a href="about.html">About Us</a> page to meet the team.</li>
+      <li>
+        Check out our <a href="privacy-policy.html">Privacy Policy</a> to see
+        how we handle data.
+      </li>
+    </ul>
+
+    <p id="footer-con"><em> Contact Us: info@example.com | 980000000 </em></p>
+  </body>
+</html>
