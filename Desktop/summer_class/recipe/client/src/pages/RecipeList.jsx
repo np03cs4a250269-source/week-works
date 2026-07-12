@@ -1,9 +1,27 @@
 import { Link } from "react-router-dom";
 function RecipeList() {
   const recipes = [
-    { id: 1, name: "Momo", category: "Nepali", difficulty: "medium" },
-    { id: 1, name: "pasta", category: "Italian", difficulty: "easy" },
-    { id: 1, name: "Dal bhat", category: "Nepali", difficulty: "easy" },
+    {
+      id: 1,
+      name: "Momo",
+      category: "Nepali",
+      difficulty: "medium",
+      icon: "🥟",
+    },
+    {
+      id: 1,
+      name: "pasta",
+      category: "Italian",
+      difficulty: "easy",
+      icon: "🍝",
+    },
+    {
+      id: 1,
+      name: "Dal bhat",
+      category: "Nepali",
+      difficulty: "easy",
+      icon: "🍛",
+    },
   ];
   return (
     <div className="page-container">
@@ -25,7 +43,7 @@ function RecipeList() {
       <div className="recipe-grid">
         {recipes.map((recipe) => (
           <div key={recipe.id} className="recipe-card">
-            <div className="recipe-image">🍽️</div>
+            <div className="recipe-image">{recipe.icon}</div>
             <h3>{recipe.name}</h3>
             <p>Category: {recipe.category}</p>
             <p>Difficulty: {recipe.difficulty}</p>
